@@ -8,7 +8,7 @@ desc = open("README.md").read(),
 setup(
     name='mapzen.whosonfirst.bundle',
     namespace_packages=[],
-    version='0.01',
+    version='0.02',
     description='A package to install all the other Who\'s On First Python packages',
     author='Mapzen',
     url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle',
@@ -36,10 +36,10 @@ setup(
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-search/tarball/master#egg=mapzen.whosonfirst.search-0.03',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-spatial/tarball/master#egg=mapzen.whosonfirst.spatial-0.02',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.04',
-        'https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.0.1',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.01',
         ],
     packages=packages,
     scripts=[
         ],
-    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.01',
+    download_url='https://github.com/whosonfirst/py-mapzen-whosonfirst-bundle/tarball/master#egg=mapzen.whosonfirst.bundle-0.02',
     license='BSD')
