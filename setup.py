@@ -8,7 +8,7 @@ desc = open("README.md").read(),
 setup(
     name='mapzen.whosonfirst.bundle',
     namespace_packages=[],
-    version='0.05',
+    version='0.06',
     description='A package to install all the other Who\'s On First Python packages',
     author='Mapzen',
     url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle',
@@ -24,6 +24,8 @@ setup(
         'mapzen.whosonfirst.spatial>=0.05',
         'mapzen.whosonfirst.utils>=0.06',
         "mapzen.whosonfirst.validator>=0.06",
+        "mapzen.whosonfirst.chatterbox>=0.01",
+        "mapzen.whosonfirst.aws>=0.01",
         ],
     dependency_links=[
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances/tarball/master#egg=mapzen.whosonfirst.concordances-0.01',
@@ -37,9 +39,11 @@ setup(
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-spatial/tarball/master#egg=mapzen.whosonfirst.spatial-0.05',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.06',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.06',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-chatterbox/tarball/master#egg=mapzen.whosonfirst.chatterbox-0.01',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-aws/tarball/master#egg=mapzen.whosonfirst.aws-0.01',
         ],
     packages=packages,
     scripts=[
         ],
-    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.05',
+    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.06',
     license='BSD')
