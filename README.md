@@ -1,6 +1,6 @@
 # py-mapzen-whosonfirst-bundle
 
-A package to install all the other Who's On First Python packages
+A (mostly working as-in-almost-there...) package to install all the other Who's On First Python packages
 
 ## What does it install?
 
@@ -13,6 +13,8 @@ A package to install all the other Who's On First Python packages
 ### [mapzen.whosonfirst.languages](https://github.com/whosonfirst/py-mapzen-whosonfirst-languages)
 
 ### [mapzen.whosonfirst.mapshaper](https://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper)
+
+### [mapzen.whosonfirst.meta](https://github.com/whosonfirst/py-mapzen-whosonfirst-meta)
 
 ### [mapzen.whosonfirst.names](https://github.com/whosonfirst/py-mapzen-whosonfirst-names)
 
