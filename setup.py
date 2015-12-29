@@ -8,7 +8,7 @@ desc = open("README.md").read(),
 setup(
     name='mapzen.whosonfirst.bundle',
     namespace_packages=[],
-    version='0.18',
+    version='0.19',
     description='A package to install all the other Who\'s On First Python packages',
     author='Mapzen',
     url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle',
@@ -28,6 +28,7 @@ setup(
         "mapzen.whosonfirst.validator>=0.09",
         "mapzen.whosonfirst.chatterbox>=0.01",
         "mapzen.whosonfirst.aws>=0.01",
+        "slack.api>=0.04",
         ],
     dependency_links=[
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances/tarball/master#egg=mapzen.whosonfirst.concordances-0.05',
@@ -35,7 +36,7 @@ setup(
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-geojson/tarball/master#egg=mapzen.whosonfirst.geojson-0.06',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-languages/tarball/master#egg=mapzen.whosonfirst.languages-0.02',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper/tarball/master#egg=mapzen.whosonfirst.mapshaper-0.04',
-        'https://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper/tarball/master#egg=mapzen.whosonfirst.meta-0.07',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-meta/tarball/master#egg=mapzen.whosonfirst.meta-0.07',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-names/tarball/master#egg=mapzen.whosonfirst.names-0.02',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-placetypes/tarball/master#egg=mapzen.whosonfirst.placetypes-0.10',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-search/tarball/master#egg=mapzen.whosonfirst.search-0.11',
@@ -45,9 +46,10 @@ setup(
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.09',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-chatterbox/tarball/master#egg=mapzen.whosonfirst.chatterbox-0.01',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-aws/tarball/master#egg=mapzen.whosonfirst.aws-0.01',
+        'https://github.com/whosonfirst/py-slack-api/tarball/master#egg=slack.api-0.04',
         ],
     packages=packages,
     scripts=[
         ],
-    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.18',
+    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.19',
     license='BSD')
