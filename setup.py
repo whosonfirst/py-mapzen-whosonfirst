@@ -8,7 +8,7 @@ desc = open("README.md").read(),
 setup(
     name='mapzen.whosonfirst.bundle',
     namespace_packages=[],
-    version='0.20',
+    version='0.21',
     description='A package to install all the other Who\'s On First Python packages',
     author='Mapzen',
     url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle',
@@ -20,6 +20,7 @@ setup(
         'mapzen.whosonfirst.mapshaper>=0.04',
         'mapzen.whosonfirst.meta>=0.07',
         'mapzen.whosonfirst.names>=0.02',
+        'mapzen.whosonfirst.pip>=0.03',
         'mapzen.whosonfirst.placetypes>=0.11',
         'mapzen.whosonfirst.search>=0.11',
         'mapzen.whosonfirst.sources>=0.03',
@@ -38,6 +39,7 @@ setup(
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper/tarball/master#egg=mapzen.whosonfirst.mapshaper-0.04',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-meta/tarball/master#egg=mapzen.whosonfirst.meta-0.07',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-names/tarball/master#egg=mapzen.whosonfirst.names-0.02',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-pip/tarball/master#egg=mapzen.whosonfirst.pip-0.03',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-placetypes/tarball/master#egg=mapzen.whosonfirst.placetypes-0.11',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-search/tarball/master#egg=mapzen.whosonfirst.search-0.11',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-sources/tarball/master#egg=mapzen.whosonfirst.sources-0.03',
@@ -51,5 +53,5 @@ setup(
     packages=packages,
     scripts=[
         ],
-    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.20',
+    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.21',
     license='BSD')
