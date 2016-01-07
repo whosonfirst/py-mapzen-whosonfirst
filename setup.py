@@ -8,13 +8,13 @@ desc = open("README.md").read(),
 setup(
     name='mapzen.whosonfirst.bundle',
     namespace_packages=[],
-    version='0.22',
+    version='0.23',
     description='A package to install all the other Who\'s On First Python packages',
     author='Mapzen',
     url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle',
     install_requires=[
         'mapzen.whosonfirst.concordances>=0.05',
-        'mapzen.whosonfirst.export>=0.69',
+        'mapzen.whosonfirst.export>=0.70',
         'mapzen.whosonfirst.geojson>=0.06',
         'mapzen.whosonfirst.languages>=0.02',
         'mapzen.whosonfirst.mapshaper>=0.04',
@@ -33,7 +33,7 @@ setup(
         ],
     dependency_links=[
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances/tarball/master#egg=mapzen.whosonfirst.concordances-0.05',
-        'https://github.com/whosonfirst/py-mapzen-whosonfirst-export/tarball/master#egg=mapzen.whosonfirst.export-0.69',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-export/tarball/master#egg=mapzen.whosonfirst.export-0.70',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-geojson/tarball/master#egg=mapzen.whosonfirst.geojson-0.06',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-languages/tarball/master#egg=mapzen.whosonfirst.languages-0.02',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper/tarball/master#egg=mapzen.whosonfirst.mapshaper-0.04',
@@ -53,5 +53,5 @@ setup(
     packages=packages,
     scripts=[
         ],
-    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.22',
+    download_url='https://github.com/mapzen/py-mapzen-whosonfirst-bundle/releases/tag/v0.23',
     license='BSD')
