@@ -2,7 +2,13 @@
 
 A Python package to install the most common Who's On First Python packages
 
-*Please note this package used to be called `py-mapzen-whosonfirst-bundle`. It was renamed to avoid confusion with the [Who's On First data bundles](https://whosonfirst.mapzen.com/bundles/index.html). If you've cloned the repository with the old name, you will need to run `git remote set-url git@github.com:whosonfirst/py-mapzen-whosonfirst.git` to use the new GitHub URL.*
+## Installation
+
+```
+sudo python setup.py install
+```
+
+## Packages included
 
 * [mapzen.whosonfirst.concordances](https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances)
 * [mapzen.whosonfirst.export](https://github.com/whosonfirst/py-mapzen-whosonfirst-export)
@@ -20,3 +26,7 @@ A Python package to install the most common Who's On First Python packages
 * [mapzen.whosonfirst.validator](https://github.com/whosonfirst/py-mapzen-whosonfirst-validator)
 * [mapzen.whosonfirst.chatterbox](https://github.com/whosonfirst/py-mapzen-whosonfirst-chatterbox)
 * [mapzen.whosonfirst.aws](https://github.com/whosonfirst/py-mapzen-whosonfirst-aws)
+
+## Note
+
+Please note this package used to be called `py-mapzen-whosonfirst-bundle`. It was renamed to avoid confusion with the [Who's On First data bundles](https://whosonfirst.mapzen.com/bundles/index.html). If you've cloned the repository with the old name, you will need to run `git remote set-url git@github.com:whosonfirst/py-mapzen-whosonfirst.git` to use the new GitHub URL.
