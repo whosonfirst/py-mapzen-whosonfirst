@@ -25,9 +25,9 @@ setup(
     author='Mapzen',
     url='https://github.com/whosonfirst/py-mapzen-whosonfirst',
     install_requires=[
-        'mapzen.whosonfirst.bundles>=0.03',
+        'mapzen.whosonfirst.bundles>=0.05',
         'mapzen.whosonfirst.concordances>=0.06',
-        'mapzen.whosonfirst.diff>=0.02',
+        'mapzen.whosonfirst.diff>=0.03',
         'mapzen.whosonfirst.export>=0.71',
         'mapzen.whosonfirst.geojson>=0.06',
         'mapzen.whosonfirst.languages>=0.02',
@@ -46,9 +46,9 @@ setup(
         "slack.api>=0.04",
         ],
     dependency_links=[
-        'https://github.com/whosonfirst/py-mapzen-whosonfirst-bundles/tarball/master#egg=mapzen.whosonfirst.bundles-0.03',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-bundles/tarball/master#egg=mapzen.whosonfirst.bundles-0.05',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances/tarball/master#egg=mapzen.whosonfirst.concordances-0.06',
-        'https://github.com/whosonfirst/py-mapzen-whosonfirst-diff/tarball/master#egg=mapzen.whosonfirst.diff-0.02',
+        'https://github.com/whosonfirst/py-mapzen-whosonfirst-diff/tarball/master#egg=mapzen.whosonfirst.diff-0.03',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-export/tarball/master#egg=mapzen.whosonfirst.export-0.71',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-geojson/tarball/master#egg=mapzen.whosonfirst.geojson-0.06',
         'https://github.com/whosonfirst/py-mapzen-whosonfirst-languages/tarball/master#egg=mapzen.whosonfirst.languages-0.02',
