@@ -2,6 +2,7 @@
 
 import sys
 import os
+import shutil
 import logging
 import json
 
@@ -77,7 +78,7 @@ if __name__ == '__main__':
 
         if os.path.exists(options.out):
             bak = "%s.bak" % options.out
-            os.copy(options.out, bak)
+            shutil.copy(options.out, bak)
 
         out = open(options.out, 'w')
 
