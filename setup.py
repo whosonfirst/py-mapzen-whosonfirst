@@ -17,6 +17,11 @@ packages = find_packages()
 desc = open("README.md").read()
 version = open("VERSION").read()
 
+# See also: scripts/build-mapzen-requires.py
+
+requires=[]
+links=[]
+
 setup(
     name='mapzen.whosonfirst',
     namespace_packages=[],
