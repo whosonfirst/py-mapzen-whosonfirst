@@ -5,6 +5,13 @@ import os
 import shutil
 import logging
 import json
+import requests
+
+# grrnnnnrnnngnnnggggggrrrnnn... (20160128/thisisaaronland)
+# https://urllib3.readthedocs.org/en/latest/security.html#disabling-warnings
+
+import urllib3
+urllib3.disable_warnings()
 
 if __name__ == '__main__':
 
@@ -21,7 +28,7 @@ if __name__ == '__main__':
     if options.verbose:	
         logging.basicConfig(level=logging.DEBUG)
     else:
-        logging.basicConfig(level=logging.INFO)
+        logging.basicConfig(level=logging.WARNING)
 
     out = sys.stdout
 
@@ -65,9 +72,36 @@ if __name__ == '__main__':
 
             continue
         
+        # Ensure that we are in the `master` branch of pkg
+
+        # ...maybe, to prevent working dev VERSION numbers from leaking in?
+        # (20160128/thisisaaronland)
+
+        # Read the current version number
+
         pkg_fh = open(version_path, "r")
         pkg_version = pkg_fh.read()
         pkg_version = pkg_version.strip()
+
+        # Read the version number on the Githubs
+
+        this_version = float(pkg_version)
+
+        that_url = "https://raw.githubusercontent.com/whosonfirst/%s/master/VERSION" % py_pkg
+        that_rsp = requests.get(that_url)
+
+        that_version = float(that_rsp.content)
+
+        if that_version != this_version:
+            logging.warning("version mismatch between local (%.02f) and remote (%.02f) copies of %s" % (this_version, that_version, pkg))
+
+            if that_version > this_version:
+                logging.error("remote version of %s is more recent that local version" % pkg)
+
+                if options.strict:
+                    sys.exit(1)
+
+        # Dump
 
         pkg_str = "%s>=%s" % (pkg, pkg_version)
         pkg_link = "https://github.com/whosonfirst/%s/tarball/master#egg=%s-%s" % (py_pkg, pkg, pkg_version)
