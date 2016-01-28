@@ -6,21 +6,57 @@
 import os, sys
 from shutil import rmtree
 
-cwd = os.path.dirname(os.path.realpath(sys.argv[0]))
-egg_info = cwd + "/mapzen.whosonfirst.egg-info"
-if os.path.exists(egg_info):
-    rmtree(egg_info)
+setup = os.path.abspath(sys.argv[0])
+parent = os.path.dirname(setup)
+pkg = os.path.basename(parent)
+
+if pkg.startswith("py-mapzen"):
+    pkg = pkg.replace("py-", "")
+    pkg = pkg.replace("-", ".")
+
+    egg_info = "%s.egg-info" % pkg
+    egg_info = os.path.join(parent, egg_info)
+
+    if os.path.exists(egg_info):
+        rmtree(egg_info)
+
+# Okay carry on as usual... well, except for all the requires stuff
+# below (20160128/thisisaaronland)
+
+# See also: scripts/build-mapzen-requires.py
+
+deps = {
+    'slack.api>=0.04' => 'https://github.com/whosonfirst/py-slack-api/tarball/master#egg=slack.api-0.04'
+}
+
+requires=[]
+links=[]
+
+mz_deps = os.path.join(parent, "MAPZEN.REQUIRES.json")
+
+if not os.path.exists(mz_deps):
+    raise Exception, "%s does not exist - please run scripts/build-mapzen-requires.py" % mz_deps)
+
+mz_fh = open(mz_deps, "r")
+mz_data = json.load(mz_fh)
+
+for pkg, url in mz_data.items():
+    deps[pkg] = url
+
+for pkg, url in deps.items():
+
+    requires.append(pkg)
+
+    if v != '':
+        links.append(url)
+
+# Okay... now we carry on as is...
 
 from setuptools import setup, find_packages
 
 packages = find_packages()
 desc = open("README.md").read()
 version = open("VERSION").read()
-
-# See also: scripts/build-mapzen-requires.py
-
-requires=[]
-links=[]
 
 setup(
     name='mapzen.whosonfirst',
