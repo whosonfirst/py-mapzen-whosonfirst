@@ -1,6 +1,7 @@
+build: deps bump
+
 bump:
-	if test -e VERSION; then cp VERSION VERSION.bak; fi
-	scripts/bump-version.pt > VERSION
+	scripts/bump-version.py
 
 deps:
 	scripts/build-mapzen-requires.py --strict --out MAPZEN.REQUIRES.json

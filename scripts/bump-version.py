@@ -2,6 +2,7 @@
 
 import sys
 import os
+import shutil
 import logging
 
 if __name__ == '__main__':
@@ -24,15 +25,23 @@ if __name__ == '__main__':
     root = os.path.dirname(scripts)
 
     version = os.path.join(root, "VERSION")
+    backup = os.path.join(root, "VERSION.bak")
+
     fh = open(version, "r")
+    current = fh.read()
+    fh.close()
 
-    version = fh.read()
-    version = version.strip()
+    current = current.strip()
 
-    version = float(version)
+    current = float(current)
     incr = float(options.increment)
 
-    next = version + incr
+    next = current + incr
 
-    print next
+    shutil.copy(version, backup)
+
+    out = open(version, "w")
+    out.write("%.02f" % next)
+    out.close()
+
     sys.exit(0)
