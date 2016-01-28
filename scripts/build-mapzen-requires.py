@@ -7,13 +7,22 @@ import json
 
 if __name__ == '__main__':
 
-    # please make me CLI options
+    import optparse
+    opt_parser = optparse.OptionParser()
 
-    src="/usr/local/mapzen"
-    strict = False
+    opt_parser.add_option('--source', dest='source', action='store', default='/usr/local/mapzen', help='...')
+    opt_parser.add_option('--strict', dest='strict', action='store_true', default=False, help='...')
+    opt_parser.add_option('--out', dest='out', action='store', default=None, help='...')
+
+    opt_parser.add_option('-v', '--verbose', dest='verbose', action='store_true', default=False, help='Be chatty (default is false)')
+    options, args = opt_parser.parse_args()
+
+    if options.verbose:	
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.INFO)
+
     out = sys.stdout
-
-    # end of please make me CLI options
 
     whoami = os.path.abspath(sys.argv[0])
     scripts = os.path.dirname(whoami)
@@ -35,12 +44,12 @@ if __name__ == '__main__':
         py_pkg = pkg.replace(".", "-")
         py_pkg = "py-%s" % py_pkg
 
-        pkg_path = os.path.join(src, py_pkg)
+        pkg_path = os.path.join(options.source, py_pkg)
 
         if not os.path.exists(pkg_path):
             logging.error("can not find source for %s (%s)" % (pkg, pkg_path))
 
-            if strict:
+            if options.strict:
                 sys.exit(1)
 
             continue
@@ -50,7 +59,7 @@ if __name__ == '__main__':
         if not os.path.exists(version_path):
             logging.error("can not find version for %s (%s)" % (pkg, version_path))
 
-            if strict:
+            if options.strict:
                 sys.exit(1)
 
             continue
@@ -63,6 +72,14 @@ if __name__ == '__main__':
         pkg_link = "https://github.com/whosonfirst/%s/tarball/master#egg=%s-%s" % (py_pkg, pkg, pkg_version)
 
         deps[pkg_str] = pkg_link
+
+    if options.out:
+
+        if os.path.exists(options.out):
+            bak = "%s.bak" % options.out
+            os.copy(options.out, bak)
+
+        out = open(options.out, 'w')
 
     json.dump(deps, out, indent=1)
     sys.exit(0)
