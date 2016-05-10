@@ -16,7 +16,6 @@
  "mapzen.whosonfirst.placetypes>=0.14": "https://github.com/whosonfirst/py-mapzen-whosonfirst-placetypes/tarball/master#egg=mapzen.whosonfirst.placetypes-0.14", 
  "mapzen.whosonfirst.search>=0.15": "https://github.com/whosonfirst/py-mapzen-whosonfirst-search/tarball/master#egg=mapzen.whosonfirst.search-0.15",
  "mapzen.whosonfirst.sources>=0.03": "https://github.com/whosonfirst/py-mapzen-whosonfirst-sources/tarball/master#egg=mapzen.whosonfirst.sources-0.03", 
- "mapzen.whosonfirst.spatial>=0.12": "https://github.com/whosonfirst/py-mapzen-whosonfirst-spatial/tarball/master#egg=mapzen.whosonfirst.spatial-0.12", 
- "mapzen.whosonfirst.utils>=0.24": "https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.24", 
+ "mapzen.whosonfirst.utils>=0.25": "https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.25", 
  "mapzen.whosonfirst.validator>=0.10": "https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.10"
 }
