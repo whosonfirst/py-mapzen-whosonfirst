@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+# -*-python-*-
+
+import os
+import sys
+import logging
+
+import mapzen.whosonfirst
+
+"""
+$> ./scripts/wof-pylibs --verbose
+DEBUG:root:I am going to try and see whether you are using the most recent version of py-mapzen-whosonfirst...
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /whosonfirst/py-mapzen-whosonfirst/master/VERSION HTTP/1.1" 200 25
+WARNING:root:You are running a newer version (0.67) of py-mapzen-whosonfirst - the current version is 0.66
+WARNING:root:You are not being liberal about things so version mismatch triggers are being invoked
+
+$> ./scripts/wof-pylibs --verbose --liberal
+DEBUG:root:I am going to try and see whether you are using the most recent version of py-mapzen-whosonfirst...
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /whosonfirst/py-mapzen-whosonfirst/master/VERSION HTTP/1.1" 200 25
+WARNING:root:You are running a newer version (0.67) of py-mapzen-whosonfirst - the current version is 0.66
+
+$> ./scripts/wof-pylibs --version
+0.67
+"""
+
+if __name__ == '__main__':
+
+   import optparse
+   opt_parser = optparse.OptionParser()
+   
+   opt_parser.add_option('--version', dest='version', action='store_true', default=False, help='...')
+   opt_parser.add_option('--liberal', dest='liberal', action='store_true', default=False, help='...')
+   
+   opt_parser.add_option('-v', '--verbose', dest='verbose', action='store_true', default=False, help='Be chatty (default is false)')
+   options, args = opt_parser.parse_args()
+   
+   if options.verbose:	
+      logging.basicConfig(level=logging.DEBUG)
+   else:
+      logging.basicConfig(level=logging.ERROR)	# to make requests STFU
+
+   if options.version:
+      print mapzen.whosonfirst.installed_version()
+      sys.exit(0)
+      
+   if mapzen.whosonfirst.is_current(liberal=options.liberal):
+      sys.exit(0)
+      
+   sys.exit(1)
+

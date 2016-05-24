@@ -77,6 +77,7 @@ setup(
     dependency_links=links,	# no really, see above
     packages=packages,
     scripts=[
+        "scripts/wof-pylibs",
         ],
     download_url='https://github.com/whosonfirst/py-mapzen-whosonfirst/releases/tag/' + version,
     license='BSD')
