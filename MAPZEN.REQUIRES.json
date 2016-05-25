@@ -1,6 +1,6 @@
 {
  "mapzen.whosonfirst.aws>=0.2": "https://github.com/whosonfirst/py-mapzen-whosonfirst-aws/tarball/master#egg=mapzen.whosonfirst.aws-0.2",
- "mapzen.whosonfirst.bundles>=0.06": "https://github.com/whosonfirst/py-mapzen-whosonfirst-bundles/tarball/master#egg=mapzen.whosonfirst.bundles-0.06",
+ "mapzen.whosonfirst.bundles>=0.061": "https://github.com/whosonfirst/py-mapzen-whosonfirst-bundles/tarball/master#egg=mapzen.whosonfirst.bundles-0.061",
  "mapzen.whosonfirst.chatterbox>=0.01": "https://github.com/whosonfirst/py-mapzen-whosonfirst-chatterbox/tarball/master#egg=mapzen.whosonfirst.chatterbox-0.01",
  "mapzen.whosonfirst.concordances>=0.06": "https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances/tarball/master#egg=mapzen.whosonfirst.concordances-0.06",
  "mapzen.whosonfirst.diff>=0.03": "https://github.com/whosonfirst/py-mapzen-whosonfirst-diff/tarball/master#egg=mapzen.whosonfirst.diff-0.03",
