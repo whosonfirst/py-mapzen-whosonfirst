@@ -27,8 +27,8 @@ def is_current(**kwargs):
    except Exception, e:
       logging.warning("Failed to determine ACTUAL current version of py-mapzen-whosonfirst, because %s" % e)
 
-      if not strict:
-         logging.info("strict mode is disabled so setting current to %s for now but don't be surprised if HILARITY ensues...")
+      if not liberal:
+         logging.info("liberal mode is disabled so setting current to %s for now but don't be surprised if HILARITY ensues...")
          current = pymz
          
    if pymz < current:
