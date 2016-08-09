@@ -9,7 +9,7 @@
  "mapzen.whosonfirst.git>=0.065": "https://github.com/whosonfirst/py-mapzen-whosonfirst-git/tarball/master#egg=mapzen.whosonfirst.git-0.065",
  "mapzen.whosonfirst.languages>=0.02": "https://github.com/whosonfirst/py-mapzen-whosonfirst-languages/tarball/master#egg=mapzen.whosonfirst.languages-0.02",
  "mapzen.whosonfirst.mapshaper>=0.05": "https://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper/tarball/master#egg=mapzen.whosonfirst.mapshaper-0.05",
- "mapzen.whosonfirst.meta>=0.11": "https://github.com/whosonfirst/py-mapzen-whosonfirst-meta/tarball/master#egg=mapzen.whosonfirst.meta-0.11",
+ "mapzen.whosonfirst.meta>=0.12": "https://github.com/whosonfirst/py-mapzen-whosonfirst-meta/tarball/master#egg=mapzen.whosonfirst.meta-0.12",
  "mapzen.whosonfirst.names>=0.02": "https://github.com/whosonfirst/py-mapzen-whosonfirst-names/tarball/master#egg=mapzen.whosonfirst.names-0.02",
  "mapzen.whosonfirst.pip>=0.04": "https://github.com/whosonfirst/py-mapzen-whosonfirst-pip/tarball/master#egg=mapzen.whosonfirst.pip-0.04",
  "mapzen.whosonfirst.pip.utils>=0.08": "https://github.com/whosonfirst/py-mapzen-whosonfirst-pip-utils/tarball/master#egg=mapzen.whosonfirst.pip.utils-0.08",
@@ -18,6 +18,6 @@
  "mapzen.whosonfirst.search>=0.182": "https://github.com/whosonfirst/py-mapzen-whosonfirst-search/tarball/master#egg=mapzen.whosonfirst.search-0.182",
  "mapzen.whosonfirst.sources>=0.064": "https://github.com/whosonfirst/py-mapzen-whosonfirst-sources/tarball/master#egg=mapzen.whosonfirst.sources-0.064",
  "mapzen.whosonfirst.uri>=0.1": "https://github.com/whosonfirst/py-mapzen-whosonfirst-uri/tarball/master#egg=mapzen.whosonfirst.uri-0.1",
- "mapzen.whosonfirst.utils>=0.32": "https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.32",
+ "mapzen.whosonfirst.utils>=0.33": "https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.33",
  "mapzen.whosonfirst.validator>=0.10": "https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.10"
 }
