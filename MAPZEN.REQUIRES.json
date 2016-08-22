@@ -4,7 +4,7 @@
  "mapzen.whosonfirst.chatterbox>=0.01": "https://github.com/whosonfirst/py-mapzen-whosonfirst-chatterbox/tarball/master#egg=mapzen.whosonfirst.chatterbox-0.01",
  "mapzen.whosonfirst.concordances>=0.06": "https://github.com/whosonfirst/py-mapzen-whosonfirst-concordances/tarball/master#egg=mapzen.whosonfirst.concordances-0.06",
  "mapzen.whosonfirst.diff>=0.04": "https://github.com/whosonfirst/py-mapzen-whosonfirst-diff/tarball/master#egg=mapzen.whosonfirst.diff-0.04",
- "mapzen.whosonfirst.export>=0.85": "https://github.com/whosonfirst/py-mapzen-whosonfirst-export/tarball/master#egg=mapzen.whosonfirst.export-0.85",
+ "mapzen.whosonfirst.export>=0.86": "https://github.com/whosonfirst/py-mapzen-whosonfirst-export/tarball/master#egg=mapzen.whosonfirst.export-0.86",
  "mapzen.whosonfirst.geojson>=0.06": "https://github.com/whosonfirst/py-mapzen-whosonfirst-geojson/tarball/master#egg=mapzen.whosonfirst.geojson-0.065",
  "mapzen.whosonfirst.git>=0.065": "https://github.com/whosonfirst/py-mapzen-whosonfirst-git/tarball/master#egg=mapzen.whosonfirst.git-0.065",
  "mapzen.whosonfirst.languages>=0.02": "https://github.com/whosonfirst/py-mapzen-whosonfirst-languages/tarball/master#egg=mapzen.whosonfirst.languages-0.02",
