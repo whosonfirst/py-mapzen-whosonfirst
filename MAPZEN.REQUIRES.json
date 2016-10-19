@@ -18,6 +18,6 @@
  "mapzen.whosonfirst.search>=0.184": "https://github.com/whosonfirst/py-mapzen-whosonfirst-search/tarball/master#egg=mapzen.whosonfirst.search-0.184",
  "mapzen.whosonfirst.sources>=0.064": "https://github.com/whosonfirst/py-mapzen-whosonfirst-sources/tarball/master#egg=mapzen.whosonfirst.sources-0.064",
  "mapzen.whosonfirst.uri>=0.1": "https://github.com/whosonfirst/py-mapzen-whosonfirst-uri/tarball/master#egg=mapzen.whosonfirst.uri-0.1",
- "mapzen.whosonfirst.utils>=0.34": "https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.34",
+ "mapzen.whosonfirst.utils>=0.35": "https://github.com/whosonfirst/py-mapzen-whosonfirst-utils/tarball/master#egg=mapzen.whosonfirst.utils-0.35",
  "mapzen.whosonfirst.validator>=0.10": "https://github.com/whosonfirst/py-mapzen-whosonfirst-validator/tarball/master#egg=mapzen.whosonfirst.validator-0.10"
 }
