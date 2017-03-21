@@ -1,0 +1,16 @@
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-bundles
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-diff
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-export
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-geojson
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-git
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-languages
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-mapshaper
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-meta
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-names
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-pip
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-placetypes
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-search
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-sources
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-uri
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-utils
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-validator
