@@ -8,4 +8,4 @@ deps:
 
 refresh:
 	git pull origin master
-	sudo python ./setup.py install
+	sudo pip install --upgrade -r requirements.txt --process-dependency-links

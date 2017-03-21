@@ -5,13 +5,15 @@ A Python package to install the most common Who's On First Python packages
 ## Installation
 
 ```
-sudo python setup.py install
+sudo pip install -r requirements.txt --process-dependency-links
 ```
+
+### Caveats
+
+This won't work without `--process-dependency-links` so I am not sure yet what happens when it gets removed from pip 1.6...
+
+###
 
 ## Packages included
 
-Please consult the [MAPZEN.REQUIRES.json](MAPZEN.REQUIRES.json) file.
-
-## Note
-
-Please note this package used to be called `py-mapzen-whosonfirst-bundle`. It was renamed to avoid confusion with the [Who's On First data bundles](https://whosonfirst.mapzen.com/bundles/index.html). If you've cloned the repository with the old name, you will need to run `git remote set-url git@github.com:whosonfirst/py-mapzen-whosonfirst.git` to use the new GitHub URL.
+Please consult the [requirements.txt](requirements.txt) file.

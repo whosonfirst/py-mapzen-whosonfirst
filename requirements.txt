@@ -1,3 +1,14 @@
+# things we need to install first to make the things we want to install
+# install even though... oh I don't know... I've never understood python
+# packaging...
+
+git+git://github.com/whosonfirst/py-machinetag
+git+git://github.com/whosonfirst/py-machinetag-elasticsearch
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-machinetag
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-elasticsearch
+
+# things we are trying to install...
+
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-bundles
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-diff
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-export
