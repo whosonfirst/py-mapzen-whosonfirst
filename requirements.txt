@@ -2,12 +2,18 @@
 # install even though... oh I don't know... I've never understood python
 # packaging...
 
+boto
+geojson
+atomicwrites
+shapely
+requests
+
 git+git://github.com/whosonfirst/py-machinetag
 git+git://github.com/whosonfirst/py-machinetag-elasticsearch
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-machinetag
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-elasticsearch
 
-# things we are trying to install...
+# things we are actually trying to install...
 
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-bundles
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-diff
