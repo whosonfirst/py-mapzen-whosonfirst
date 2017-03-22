@@ -5,7 +5,7 @@ A Python package to install the most common Who's On First Python packages
 ## Installation
 
 ```
-sudo pip install -r requirements.txt --process-dependency-links .
+sudo pip install --upgrade -r requirements.txt --process-dependency-links .
 ```
 
 ### Caveats

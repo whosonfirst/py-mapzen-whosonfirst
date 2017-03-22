@@ -39,7 +39,6 @@ setup(
     url='https://github.com/whosonfirst/py-mapzen-whosonfirst',
     packages=packages,
     scripts=[
-        "scripts/wof-pylibs",
         ],
     download_url='https://github.com/whosonfirst/py-mapzen-whosonfirst/releases/tag/' + version,
     license='BSD')

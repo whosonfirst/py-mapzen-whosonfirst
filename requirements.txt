@@ -9,7 +9,6 @@ shapely
 requests
 
 git+git://github.com/whosonfirst/py-machinetag
-git+git://github.com/whosonfirst/py-machinetag-elasticsearch
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-machinetag
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-elasticsearch
 
