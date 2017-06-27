@@ -6,7 +6,7 @@ _First of all this is targeted at Ubuntu and specifically the `apt` package mana
 
 This is a simple shell script to automate _most_ of the tasks involved in making sure that everything you need to use the py-mapzen-whosonfirst libraries with `pip` rather than `easy_install` is set up.
 
-The first step is _not_ automated however. That involves purging any existing `py-mapzen-whosonfirst-* libraries from your system. Because this involves deleting thing you need to take responsibility for doing it yourself. This is what I do:
+The first step is _not_ automated however. That involves purging any existing `py-mapzen-whosonfirst-* libraries from your system. Because this involves deleting things you need to take responsibility for doing it yourself. This is what I do:
 
 ```
 python
@@ -24,7 +24,7 @@ Which means everything is stored in `/usr/local/lib/python2.7/dist-packages` on 
 sudo rm -rf /usr/local/lib/python2.7/dist-packages/mapzen.*
 ```
 
-Please don't just blindly copy and paste what's happening above. Think about it in the context of _your machine_. If you're not sure, ask someone to help you before proceeding.
+Please don't just blindly copy and paste what's happening above. Think about it in the context of _your machine_. If you're not sure, _ask someone to help you_ before proceeding.
 
 Once that is done you should be able to execute the following commands (from inside the root of the `py-mapzen-whosonfirst` repo) to finish getting set up:
 
