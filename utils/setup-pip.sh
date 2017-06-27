@@ -7,6 +7,8 @@
 # /usr/local/lib/python2.7/dist-packages/mapzen.whosonfirst.search-0.13_-py2.7.egg
 # and so on...
 
+sudo apt-get update --fix-missing
+
 sudo apt-get install -y libssl-dev libffi-dev libpython-dev
 sudo apt-get install -y python-pip python-pyparsing python-setuptools
 

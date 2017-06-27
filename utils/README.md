@@ -32,23 +32,3 @@ Once that is done you should be able to execute the following commands (from ins
 ./utils/setup-pip.sh
 make upgrade
 ```
-
-With an emphasis on the word _should_. As I write this, the Ubuntu `apt` package manager can't find the `python-pip` package and fails with errors like this:
-
-```
-The following NEW packages will be installed:
-  python-chardet-whl python-colorama python-colorama-whl python-distlib
-  python-distlib-whl python-html5lib python-html5lib-whl python-pip
-  python-pip-whl python-pyparsing python-requests-whl python-setuptools-whl
-  python-six-whl python-urllib3-whl python-wheel python3-pkg-resources
-0 upgraded, 16 newly installed, 0 to remove and 4 not upgraded.
-Need to get 208 kB/1,518 kB of archives.
-After this operation, 3,708 kB of additional disk space will be used.
-Err http://archive.ubuntu.com/ubuntu/ trusty-updates/universe python-pip-whl all 1.5.4-1ubuntu3
-  404  Not Found [IP: 91.189.88.149 80]
-Err http://archive.ubuntu.com/ubuntu/ trusty-updates/universe python-pip all 1.5.4-1ubuntu3
-  404  Not Found [IP: 91.189.88.149 80]
-E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip-whl_1.5.4-1ubuntu3_all.deb  404  Not Found [IP: 91.189.88.149 80]
-```
-
-Maybe one day it will work?
