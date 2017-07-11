@@ -7,6 +7,7 @@ geojson
 atomicwrites
 shapely
 requests
+deepdiff
 
 git+git://github.com/whosonfirst/py-machinetag
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-machinetag
@@ -31,3 +32,5 @@ git+git://github.com/whosonfirst/py-mapzen-whosonfirst-uri
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-utils
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-validator
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-properties
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-hierarchy
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-spatial
