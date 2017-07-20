@@ -8,6 +8,7 @@ atomicwrites
 shapely
 requests
 deepdiff
+tenacity        # TBD - does the default system/ubuntu installation of six play nice with this (20170720/thisisaaronland)
 
 git+git://github.com/whosonfirst/py-machinetag
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-machinetag
