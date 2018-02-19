@@ -35,3 +35,4 @@ git+git://github.com/whosonfirst/py-mapzen-whosonfirst-validator
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-properties
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-hierarchy
 git+git://github.com/whosonfirst/py-mapzen-whosonfirst-spatial
+git+git://github.com/whosonfirst/py-mapzen-whosonfirst-index
